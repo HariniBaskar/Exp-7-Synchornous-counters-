@@ -78,6 +78,8 @@ endmodule
 ### TIMING DIAGRAM (UP COUNTER)
 ![de06re0](https://user-images.githubusercontent.com/93427253/169737973-5972c90c-6ced-45e6-9f62-8d72761fb155.png)
 ![DEUP1](https://user-images.githubusercontent.com/93427253/169740913-103b6498-3438-4417-821a-6e755845225e.png)
+### TRUTH TABLE(UP COUNTER)
+![UPCOUNTER](https://user-images.githubusercontent.com/93427253/169741491-56781ab6-e7e7-4202-8051-b2a8b5f40021.png)
 
 ### PROGRAM (DOWN COUNTER)
 ```
@@ -100,12 +102,10 @@ endmodule
 ### RTL LOGIC (DOWN COUNTER)
 ![de06down](https://user-images.githubusercontent.com/93427253/169740256-e2395463-943a-4248-b148-cd39ec4abe6a.png)
 ### TIMING DIAGRAM (DOWN COUNTER)
-![de06re0d](https://user-images.githubusercontent.com/93427253/169740303-a3b3e520-dd40-4573-b417-c17fe84a7eb9.png)
+![dedown0](https://user-images.githubusercontent.com/93427253/169741443-684ebfb9-32cf-484a-b1b7-16deb4d6ce67.png)
 ![DEDOWN1](https://user-images.githubusercontent.com/93427253/169740869-f096a2d5-e108-4858-9f60-3271497ee37b.png)
-
-### TRUTH TABLE 
-
-
+### TRUTH TABLE(DOWN COUNTER)
+![DOWNCOUNTER](https://user-images.githubusercontent.com/93427253/169741521-c866ed18-c598-4012-a815-ec20fd6ffca4.png)
 
 ### RESULTS 
 Hence the Four bit Up counter and Down counter is implemented successfully and its functionality is validated.
