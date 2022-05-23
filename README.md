@@ -76,31 +76,31 @@ endmodule
 ![de06re0](https://user-images.githubusercontent.com/93427253/169737973-5972c90c-6ced-45e6-9f62-8d72761fb155.png)
 ![de06re1](https://user-images.githubusercontent.com/93427253/169738001-937ca70c-33d8-49ba-8a3e-b5fdf7eafdc1.png)
 
+### PROGRAM (DOWN COUNTER)
+```
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by: Harini.B
+RegisterNumber: 212221230035 
 
-
-
-
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
-
-
-
-
-
-
-
-
-### TIMING DIGRAMS FOR COUNTER  
-
-
-
-
+module de06(input clk,input reset,output[0:3]counter);
+reg[0:3]counter_down;
+always@(posedge clk or posedge reset)
+begin
+if (reset)
+counter_down<=4'd0;
+else 
+counter_down<=counter_down-4'd1;
+end
+assign counter=counter_down;
+endmodule
+```
+### RTL LOGIC (DOWN COUNTER)
+![de06down](https://user-images.githubusercontent.com/93427253/169740256-e2395463-943a-4248-b148-cd39ec4abe6a.png)
+### TIMING DIAGRAM (DOWN COUNTER)
+![de06re0d](https://user-images.githubusercontent.com/93427253/169740303-a3b3e520-dd40-4573-b417-c17fe84a7eb9.png)
+![de06re1d](https://user-images.githubusercontent.com/93427253/169740321-c4ffa7bc-0548-4977-99fd-c060b65e0d04.png)
 
 ### TRUTH TABLE 
-
-
-
 
 
 
