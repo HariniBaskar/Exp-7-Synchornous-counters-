@@ -1,9 +1,11 @@
 # Exp-6-Synchornous-counters - up counter and down counter 
-### AIM: To implement 4 bit up and down counters and validate  functionality.
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
-### THEORY 
-
+### AIM: 
+To implement 4 bit up and down counters and validate  functionality.
+### HARDWARE REQUIRED: 
+PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED:  
+Quartus prime
+### THEORY:
 ## UP COUNTER 
 The counter is a digital sequential circuit and here it is a 4 bit counter, which simply means it can count from 0 to 15 and vice versa based upon the direction of counting (up/down). 
 
@@ -50,12 +52,30 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 
 
-### PROGRAM 
+### PROGRAM (UP COUNTER)
 /*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by: Harini.B
+RegisterNumber: 212221230035 
 */
+```
+module de06(input clk,input reset,output[0:3]counter);
+reg[0:3]counter_up;
+always@(posedge clk or posedge reset)
+begin
+if (reset)
+counter_up<=4'd0;
+else 
+counter_up<=counter_up+4'd1;
+end
+assign counter=counter_up;
+endmodule
+```
+### RTL LOGIC (UP COUNTER)
+![de06up](https://user-images.githubusercontent.com/93427253/169737903-7df02767-aa31-4226-abe7-d31f558853fe.png)
+### TIMING DIAGRAM (UP COUNTER)
+![de06re0](https://user-images.githubusercontent.com/93427253/169737973-5972c90c-6ced-45e6-9f62-8d72761fb155.png)
+![de06re1](https://user-images.githubusercontent.com/93427253/169738001-937ca70c-33d8-49ba-8a3e-b5fdf7eafdc1.png)
 
 
 
